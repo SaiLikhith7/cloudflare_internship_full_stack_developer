@@ -34,11 +34,10 @@ async function handleRequest(request) {
 	let resp1 = null;
   let variant = -1;
 
-
   let resp = await fetch(url);  //Fetching mail URL
 	const data = await resp.json(); // Parsing to JSON
 
-  
+
   // Defining constant variables for 2 variants of URL - to be used to check cookies
 	const URL_1 = data.variants[0];
   const URL_2 = data.variants[1];
