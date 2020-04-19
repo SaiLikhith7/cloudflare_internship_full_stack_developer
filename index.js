@@ -86,7 +86,7 @@ class AttributeRewriter {
     if (attribute) {
       element.setAttribute(
         this.attributeName,
-        attribute.replace(attribute, 'https://github.com/SaiLikhith7/internship_round1_cloudflare'),
+        attribute.replace(attribute, 'https://github.com/SaiLikhith7/cloudflare_internship_full_stack_developer'),
       )
     }
   }
