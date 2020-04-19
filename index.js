@@ -9,15 +9,11 @@
 *               d. Changing copy/URLs                                                             *
 *               e. Persisting variants                                                            *
 * Reference   - https://github.com/cloudflare-internship-2020/internship-application-fullstack    *
-* Author      - Sai Likhith Kanuparthi (sailikhithk)                                                             *
-* Editor      - Atom                                                             *
-* Published   - https://cloudflare.sailikhithk.workers.dev                             *
-*                                                                                                 *
-*                                History                                                          *
-* Version               Date                   Author                 Description                 *
-***************************************************************************************************
-* Initial Version       19 April, 2020        sailikhithk       Initial changes as per requirement  *
-*                                                                                                 *
+* Author      - Sai Likhith Kanuparthi (sailikhithk)                                              *
+* Editor      - Atom                                                                              *
+* Published at Worker  - https://cloudflare.sailikhithk.workers.dev                               *
+* Domain Name - sailikhithk.codes (bought from name.com)                                                                 *
+* Alias Website - https://www.sailikhithk.codes                                                   *                                             *
 *                                                                                                 *
 **************************************************************************************************/
 
