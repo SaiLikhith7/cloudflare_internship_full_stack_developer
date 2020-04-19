@@ -39,16 +39,16 @@ async function handleRequest(request) {
   let variant = -1;
 
 
-  let resp = await fetch(url);  //Fetching mail URL @akd
-	const data = await resp.json(); // Parsing to JSON @akd
+  let resp = await fetch(url);  //Fetching mail URL
+	const data = await resp.json(); // Parsing to JSON
 
-  // Defining constant variables for 2 variants of URL - to be used to check cookies @akd
+  // Defining constant variables for 2 variants of URL - to be used to check cookies
 	const URL_1 = data.variants[0];
   const URL_2 = data.variants[1];
 
   //Check for cookies
   const cookie_url = request.headers.get('cookie');
-  url_cookie = (cookie_url) ? cookie_url.split('=>')[1] : null; //Spliting cookies to get one of the variant URLs @akd
+  url_cookie = (cookie_url) ? cookie_url.split('=>')[1] : null; //Spliting cookies to get one of the variant URLs
 
 
   //Persisting variants
@@ -56,9 +56,8 @@ async function handleRequest(request) {
    	resp1 = await fetch(url_cookie);
    	variant = data.variants.indexOf(url_cookie);
   }
-  //When user hits URL for the first time, variant selected in A/B style @akd
+  //When user hits URL for the first time, variant selected in A/B style
   else{
-   	//Fetch URL in A/B Testing style (50%)
    	let ab_split_url = (Math.random() > 0.5 ? data.variants[0]: data.variants[1]);
   	resp1 = await fetch(ab_split_url);
   	resp1 = new Response(resp1.body,resp1);
@@ -67,7 +66,7 @@ async function handleRequest(request) {
   }
 
 
-  // Changes in the HTML content of the variants @akd
+  // Changes in the HTML content of the variants
   return  new HTMLRewriter().on('a', new AttributeRewriter('href'))
   							            .on('title',new AttributeRewriter(null,'title',variant))
   							            .on('h1',new AttributeRewriter(null,'h1',variant))
@@ -76,7 +75,7 @@ async function handleRequest(request) {
 
 }
 
-// Class to perform Changes in the HTML content of the variants @akd
+// Class to perform Changes in the HTML content of the variants
 class AttributeRewriter {
   constructor(attributeName,tag,variant) {
     this.attributeName = attributeName
