@@ -66,7 +66,7 @@ async function handleRequest(request) {
   }
 
 
-  // Changes in the HTML content of the variants
+  // Changes in the HTML content of the variants #Extra Credit
   return  new HTMLRewriter().on('a', new AttributeRewriter('href'))
   							            .on('title',new AttributeRewriter(null,'title',variant))
   							            .on('h1',new AttributeRewriter(null,'h1',variant))
@@ -100,12 +100,12 @@ class AttributeRewriter {
 
   	if (this.tag == 'title' && this.variant  == 0){
   		if (!text.lastInTextNode)
-  			text.replace(' sailikhithkCloudflare - Variant 1');
+  			text.replace(' sailikhithk Cloudflare - Variant 1');
   	}
 
   	else if (this.tag == 'title' && this.variant  == 1){
   		if (!text.lastInTextNode)
-  			text.replace(' sailikhithkCloudflare - Variant 2');
+  			text.replace(' sailikhithk Cloudflare - Variant 2');
   	}
 
   	else if (this.tag == 'h1' && this.variant  == 0){
