@@ -87,4 +87,4 @@ If you have a registered domain/zone with Cloudflare, try deploying your project
 
 # My Up and running webiste
 ### Worker's URL - https://cloudflare.sailikhithk.workers.dev/
-### Redirected CNAME - https://www.sailikhithk.code
+### Redirected CNAME - https://www.sailikhithk.codes
