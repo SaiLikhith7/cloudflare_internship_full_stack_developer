@@ -31,10 +31,6 @@ const url = 'https://cfw-takehome.developers.workers.dev/api/variants';
 
 async function handleRequest(request) {
 
- /* return new Response('Hello worker!', {
-    headers: { 'content-type': 'text/plain' },
-  })
-*/
 	let resp1 = null;
   let variant = -1;
 
@@ -132,10 +128,6 @@ class AttributeRewriter {
   		if (!text.lastInTextNode){
   		text.replace('Go to sailikhithk\'s Github Cloudflare Repository')
   	}
-
-
   	}
-
-
   }
 }
