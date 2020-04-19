@@ -33,6 +33,7 @@ async function handleRequest(request) {
 
 	let resp1 = null;
   let variant = -1;
+  
 
   let resp = await fetch(url);  //Fetching mail URL
 	const data = await resp.json(); // Parsing to JSON
