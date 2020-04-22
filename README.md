@@ -91,3 +91,5 @@ If you have a registered domain/zone with Cloudflare, try deploying your project
 ### Portfolio Website - https://sailikhith7.github.io
 ### My LinkedIn - https://www.linkedin.com/in/sailikhith96
 ### GitHub - https://www.github.com/sailikhith7
+
+My variant 1 and variant 2 changes randomly as per probability of random number generation.
